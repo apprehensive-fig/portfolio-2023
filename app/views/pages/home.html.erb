@@ -6,15 +6,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script> 
 
 <div class="section">
-  
   <%= render "sidebar" %>
 
   <div class="container landing">
-    <h1>hello,</h1>
-    <h2>i'm alexis</h2>
-    <div class="images">
+    <h1>hello,<br> i'm alexis<br>
+      a full-stack develper,<br>
+      environmentalist, reader,<br>
+      coffee-addict, sane cat lady.
+    </h1>
+    <div class="images-container">
+      <div class="images">
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691238594/IMG_1507_kg20bm.jpg" %>
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691238652/IMG_6875_pqmryx.jpg" %>
+      </div>
+      <div class="images">
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691239234/11065_l0bfs2.jpg" %>
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691242259/fg_pfhywd.jpg" %>
+      </div>
     </div>
   </div>
 </div>
 
 <%= render "cursor_tag" %>
+<%= render "footer" %>
