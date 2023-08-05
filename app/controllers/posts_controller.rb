@@ -1,7 +1,13 @@
 class PostsController < ApplicationController
 
+  # before_action :authenticate_user!, only: [:new]
+
   def new
-    @post = Post.new
+    if user_signed_in?
+      @post = Post.new
+    else
+      redirect_to root_url
+    end
   end
 
   def create
@@ -10,8 +16,18 @@ class PostsController < ApplicationController
     redirect_to root_url
   end
 
-  def show
+  def edit
     @post = Post.find_by_id(params[:id])
+  end
+  
+  def update
+    @post = Post.update(post_params)
+
+    redirect_to root_url
+  end
+
+  def show
+    @post = Post.find_by_title(params[:title])
   end
 
   def post_params

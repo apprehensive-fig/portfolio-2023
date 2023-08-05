@@ -1,0 +1,19 @@
+<div class="section">
+  <%= render "sidebar" %>
+  
+  <div class="container">
+    <div class="post">
+      <% @posts = Post.where(p_type: "blog") %>
+        <% if @posts %>
+          <% @posts.each do |post| %>
+            <%= link_to "/blog/#{post.title}" do %>
+              <%= image_tag post.meta_image %>
+              <%= post.title %>
+            <% end %>
+          <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render "cursor_tag" %>

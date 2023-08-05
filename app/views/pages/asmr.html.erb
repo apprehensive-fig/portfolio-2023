@@ -1,0 +1,17 @@
+<div class="section">
+  <%= render "sidebar" %>
+
+  <div class="container">
+    <div class="posts">
+      <% if @posts %>
+          <% @posts.each do |post| %>
+            <div class="post-wrapper">
+              <p><%= post.title %></p>
+              <%= post.body.html_safe %>
+            </div>
+          <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <%= render "cursor_tag" %>

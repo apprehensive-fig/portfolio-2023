@@ -5,11 +5,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <% if notice %> <p class="alert alert-success"><%= notice %></p> <% end %>
+    <% if alert %> <p class="alert alert-danger"><%= alert %></p> <% end %>
+
     <%= yield %>
   </body>
 </html>

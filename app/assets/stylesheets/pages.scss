@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+.section {
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   display: flex;
+  height: 100vh;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
-//   font-family: 'Tsukimi Rounded', sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    max-width: 300px;
+  }
 }
 
 .body, .sidebar {
@@ -13,45 +30,121 @@
 
 .body {
   width: 80%;
-  align-items: center;
+  align-items: end;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+p, a, h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 .sidebar {
-  height: 100vh;
-  width: 20%;
-  align-items: flex-start;
-  padding-left: 30px;
-  right: 0;
-  position: fixed;
+  overflow: hidden;
+  align-self: center;
 }
 
 h4 {
-  font-weight: 500;
-
+  font-weight: 400;
+  font-size: 14px;
   a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.menu {
+  a {
+    img {
+      width: 50px;
+    }
   }
 }
 
 .menu-links {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
 
   a {
-   font-weight: 300;
-   text-decoration: none;
-   color: #000;
+    text-decoration: none;
+  }
+
+  p {
+    font-weight: 300;
+    color: #000;
+    // border: solid 1px #000;
+    padding-inline: 5px;
+  }
+
+  p:hover {
+    color: #6B6A69;
   }
 }
 
-.section {
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.images {
+  position: absolute;
+  display: grid;
+  overflow: hidden;
+  height: 100vh;
+  img {
+    max-width: 500px;
+  }
+}
+
+.post-wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  font-size: 12px;
+  text-indent: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  overflow: auto;
+}
+
+.post {
+
+  a {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+  }
+
+  img {
+    max-width: 300px;
+  }
+}
+
+audio {
+  filter: sepia(50%) saturate(50%) grayscale(1) contrast(100%) invert(0%);
+  width: 150px;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-timeline, -webkit-media-controls-timeline {
+  display: none;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+#image {
+  width: 22px;
+  position: absolute;
 }
