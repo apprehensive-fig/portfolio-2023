@@ -1,16 +1,19 @@
 <div class="section">
   <%= render "sidebar" %>
-  
+
+  <% @posts = Post.where(p_type: "blog") %>
+
   <div class="container blog">
-    <div class="post">
-      <% @posts = Post.where(p_type: "blog") %>
-        <% if @posts %>
-          <% @posts.each do |post| %>
+    <div class="posts">
+      <% if @posts %>
+        <% @posts.each do |post| %>
+          <div class="post">
             <%= link_to "/blog/#{post.title}" do %>
               <%= image_tag post.meta_image %>
               <%= post.title %>
             <% end %>
-          <% end %>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>
