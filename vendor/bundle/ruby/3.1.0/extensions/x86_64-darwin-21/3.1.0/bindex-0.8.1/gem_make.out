@@ -1,0 +1,15 @@
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/alex/.rbenv/versions/3.1.0/bin/ruby -I /Users/alex/.rbenv/versions/3.1.0/lib/ruby/3.1.0 -r ./siteconf20230806-87043-zybb26.rb extconf.rb
+creating Makefile
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20230806-87043-6maj1y/skiptrace/internal
