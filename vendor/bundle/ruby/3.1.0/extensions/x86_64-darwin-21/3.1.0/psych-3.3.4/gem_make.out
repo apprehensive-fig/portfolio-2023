@@ -1,0 +1,24 @@
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-3.3.4/ext/psych
+/Users/alex/.rbenv/versions/3.1.0/bin/ruby extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-3.3.4/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20230809-7255-ovj0v6 sitelibdir\=./.gem.20230809-7255-ovj0v6 clean
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-3.3.4/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20230809-7255-ovj0v6 sitelibdir\=./.gem.20230809-7255-ovj0v6
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.bundle
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-3.3.4/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20230809-7255-ovj0v6 sitelibdir\=./.gem.20230809-7255-ovj0v6 install
+/usr/local/bin/ginstall -c -m 0755 psych.bundle ./.gem.20230809-7255-ovj0v6
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-3.3.4/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20230809-7255-ovj0v6 sitelibdir\=./.gem.20230809-7255-ovj0v6 clean

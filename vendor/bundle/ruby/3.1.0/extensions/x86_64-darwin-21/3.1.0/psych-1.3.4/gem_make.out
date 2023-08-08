@@ -1,0 +1,237 @@
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-1.3.4/ext/psych
+/Users/alex/.rbenv/versions/3.1.0/bin/ruby -I /Users/alex/.rbenv/versions/3.1.0/lib/ruby/3.1.0 -r ./siteconf20230809-71128-eqonun.rb extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-1.3.4/ext/psych
+make DESTDIR\= clean
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-1.3.4/ext/psych
+make DESTDIR\=
+compiling emitter.c
+compiling parser.c
+parser.c:30:55: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    VALUE string = rb_funcall(io, id_read, 1, INT2NUM(size));
+                                              ~~~~~~~ ^~~~
+parser.c:73:22: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            INT2NUM(parser->problem_offset),
+            ~~~~~~~ ~~~~~~~~^~~~~~~~~~~~~~
+parser.c:72:14: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            INT2NUM(column),
+            ~~~~~~~ ^~~~~~
+parser.c:71:14: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+            INT2NUM(line),
+            ~~~~~~~ ^~~~
+parser.c:256:9: warning: 'RB_OBJ_TAINTED' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+    if (OBJ_TAINTED(yaml)) tainted = 1;
+        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:151:25: note: expanded from macro 'OBJ_TAINTED'
+#define OBJ_TAINTED     RB_OBJ_TAINTED     /**< @old{RB_OBJ_TAINTED} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:118:30: note: expanded from macro 'RB_OBJ_TAINTED'
+#define RB_OBJ_TAINTED       RB_OBJ_TAINTED
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:818:1: note: 'RB_OBJ_TAINTED' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:322:21: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                            if (tainted) OBJ_TAINT(handle);
+                                         ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:330:21: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                            if (tainted) OBJ_TAINT(prefix);
+                                         ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:361:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(alias);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:382:16: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                if (tainted) OBJ_TAINT(val);
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:390:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(anchor);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:398:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(tag);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:430:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(anchor);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:439:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(tag);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:470:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(anchor);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:478:20: warning: 'RB_OBJ_TAINT' is deprecated: taintedness turned out to be a wrong idea. [-Wdeprecated-declarations]
+                    if (tainted) OBJ_TAINT(tag);
+                                 ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:149:25: note: expanded from macro 'OBJ_TAINT'
+#define OBJ_TAINT       RB_OBJ_TAINT       /**< @old{RB_OBJ_TAINT} */
+                        ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:116:30: note: expanded from macro 'RB_OBJ_TAINT'
+#define RB_OBJ_TAINT         RB_OBJ_TAINT
+                             ^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/fl_type.h:849:1: note: 'RB_OBJ_TAINT' has been explicitly marked deprecated here
+RBIMPL_ATTR_DEPRECATED(("taintedness turned out to be a wrong idea."))
+^
+/Users/alex/.rbenv/versions/3.1.0/include/ruby-3.1.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+# define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+                                                    ^
+parser.c:295:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+                  args[1] = INT2NUM((long)event.data.stream_start.encoding);
+                            ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:309:12: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+                        INT2NUM((long)event.data.document_start.version_directive->minor)
+                        ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:308:12: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+                        INT2NUM((long)event.data.document_start.version_directive->major),
+                        ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:410:19: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+                style = INT2NUM((long)event.data.scalar.style);
+                        ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:448:19: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+                style = INT2NUM((long)event.data.sequence_start.style);
+                        ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:487:19: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+                style = INT2NUM((long)event.data.mapping_start.style);
+                        ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:531:36: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    args[0] = INT2NUM(parser->mark.index);
+              ~~~~~~~ ~~~~~~~~~~~~~^~~~~
+parser.c:532:36: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    args[1] = INT2NUM(parser->mark.line);
+              ~~~~~~~ ~~~~~~~~~~~~~^~~~
+parser.c:533:36: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    args[2] = INT2NUM(parser->mark.column);
+              ~~~~~~~ ~~~~~~~~~~~~~^~~~~~
+24 warnings generated.
+compiling psych.c
+psych.c:14:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+    list[0] = INT2NUM((long)major);
+              ~~~~~~~ ^~~~~~~~~~~
+psych.c:15:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+    list[1] = INT2NUM((long)minor);
+              ~~~~~~~ ^~~~~~~~~~~
+psych.c:16:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+    list[2] = INT2NUM((long)patch);
+              ~~~~~~~ ^~~~~~~~~~~
+3 warnings generated.
+compiling to_ruby.c
+compiling yaml_tree.c
+linking shared-object psych.bundle
+ld: warning: directory not found for option '-L/opt/local/lib'
+
+current directory: /Users/alex/code/apprehensive-fig/portfolio-2023/vendor/bundle/ruby/3.1.0/gems/psych-1.3.4/ext/psych
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 psych.bundle ./.gem.20230809-71128-vymm31
