@@ -126,7 +126,7 @@ h4 {
 }
 
 .landing {
-  margin: 200px 0 50px 0;
+  margin: 200px 0 10px 0;
 
   h1 {
     margin-inline: 50px;
@@ -190,6 +190,8 @@ h4 {
 
   .posts {
     animation: fadeInAnimation ease 3s;
+    display: flex;
+    gap: 10px;
 
     .post {
       a {
@@ -208,6 +210,12 @@ h4 {
         max-width: 300px;
         border-radius: 4px;
         opacity: 80%;
+      }
+    }
+
+    .post:hover {
+      img {
+        opacity: 100%;
       }
     }
   }
@@ -261,11 +269,33 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 500px;
   font-size: 12px;
   text-indent: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   overflow: auto;
+  margin: 100px 0 50px 0;
+  animation: fadeInAnimation ease 3s;
+
+  img {
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+.post-title {
+  text-align: center;
+}
+
+.post-body {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
 }
 
 .projects {
@@ -277,6 +307,7 @@ h4 {
   position: absolute;
   display: flex;
   font-size: 12px;
+  z-index: 999;
 }
 
 @media screen and (max-width: 480px) {

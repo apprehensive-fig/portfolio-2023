@@ -1,10 +1,11 @@
 <div class="section">
   
   <%= render "sidebar" %>
-  <div class="post-wrapper">
+  <div class="container post-wrapper">
     <h2 class="post-title"><%= @post.title %></h2>
     <p class="post-body"><%= @post.body.html_safe %></p>
   </div>
 </div>
 
 <%= render "cursor_tag" %>
+<%= render "footer" %>

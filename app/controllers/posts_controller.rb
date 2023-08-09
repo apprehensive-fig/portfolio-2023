@@ -6,24 +6,25 @@ class PostsController < ApplicationController
     if user_signed_in?
       @post = Post.new
     else
-      redirect_to root_url
+      redirect_to root_path
     end
   end
 
   def create
     @post = Post.create!(post_params)
 
-    redirect_to root_url
+    redirect_to blog_path
   end
 
   def edit
-    @post = Post.find_by_id(params[:id])
+    @post = Post.find(params[:id])
   end
   
   def update
-    @post = Post.update(post_params)
+    @post = Post.find(params[:id])
+    @post.update(post_params)
 
-    redirect_to root_url
+    redirect_to "/blog/#{@post.title}"
   end
 
   def show

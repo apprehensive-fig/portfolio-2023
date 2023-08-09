@@ -1,8 +1,6 @@
 <div class="section">
   <%= render "sidebar" %>
 
-  <% @posts = Post.where(p_type: "blog") %>
-
   <div class="container blog">
     <div class="posts">
       <% if @posts %>
