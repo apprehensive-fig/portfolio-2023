@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>๋࣭ ⭑</title>
+    <meta name="viewport" content="width=device-width"/>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,22 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
+
+    <%# landing first 2 images %>
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691238594/IMG_1507_kg20bm.jpg">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691238652/IMG_6875_pqmryx.jpg">
+    
+    <%# first project images %>
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1649162739/Screen_Shot_2022-04-05_at_21.40.35_tnqftm.png">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623745835/Screen_Shot_2021-06-15_at_13.46.59_dwphvj.png">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623745165/Screen_Shot_2021-06-15_at_13.46.29_aihxgx.png">
+    
+    <%# profile photo %>
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691253465/7F8D531C-96CB-4699-B899-E943812F8D8A_ikonyg.jpg">
+
+    <%# first 2 blog post meta images %>
+    <link rel="preload" as="image" href="<%= Post.first.meta_image %>">
+    <link rel="preload" as="image" href="<%= Post.second.meta_image %>">
   </head>
 
   <body>

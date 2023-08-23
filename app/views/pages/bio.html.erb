@@ -2,29 +2,10 @@
   <%= render "sidebar" %>
 
   <div class="container bio">
-    <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691253465/7F8D531C-96CB-4699-B899-E943812F8D8A_ikonyg.jpg", style: "width:200px" %>
+    <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691253465/7F8D531C-96CB-4699-B899-E943812F8D8A_ikonyg.jpg", alt: "my profie photo" %>
     <div class="text">
-      <p>
-        alexis an<br>
-        psychology major<br>
-        from nyc, currently based in tokyo<br>
-        previous experience in banking compliance<br>
-        now working as full-stack devleoper at treehouse<br>
-        enjoys reading, drawing, and being comfortable<br>
-        loves all animals, books, old-school,<br>
-        good coffee, good pizza,<br>
-        and rainy weather<br>
-      </p>
-      <p>
-        I believe it's important to:<br>
-        1. recycle and to reduce plastic waste<br>
-        2. be self-aware and make objective observations<br>
-        3. take it easy and to enjoy the little things in life<br>
-        4. hold my tongue unless absolutely necessary<br>
-        5. have a healthy mentality and boundaries<br>
-        6. be considerate of others<br>
-        7. love one's self<br>
-      </p>
+    <% @bio = Post.find_by_p_type("bio") %>
+    <%= @bio.body.html_safe %>
     </div>
     <div class="sns">
       <a href="https://linkedin.com/in/alexis-sae-an" target="_blank"><i class="fab fa-linkedin"></i></a>
