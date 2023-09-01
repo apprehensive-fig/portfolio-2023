@@ -172,7 +172,7 @@ h4 {
 
 .bio {
   align-items: center;
-  animation: slideDown 1.5s ease;
+  animation: slideDown 1s ease;
 
   .profile-photo {
     background: url('https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691253465/7F8D531C-96CB-4699-B899-E943812F8D8A_ikonyg.jpg') no-repeat center / cover;
@@ -246,7 +246,7 @@ h4 {
       align-items: end;
       text-indent: 40px;
       opacity: 80%;
-      animation: slideDown 1.5s ease;
+      animation: slideDown 1s ease;
 
       a {
         display: flex;
@@ -297,7 +297,7 @@ h4 {
     display: flex;
     align-items: center;
     text-align: center;
-    animation: slideDown 1.5s ease;
+    animation: slideDown 1s ease;
 
     .left, .right {
       display: flex;
@@ -421,26 +421,36 @@ h4 {
   font-family: 'Questrial', sans-serif;
   font-weight: 100;
   overflow: auto;
-  margin: 100px 0 50px 0;
-
-  img {
-    max-width: 400px;
-    height: auto;
-  }
+  margin: 85px 0 50px 0;
 }
 
 .post-title {
   text-align: center;
+  font-family: 'Questrial', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  text-indent: 0;
+  border-radius: 4px;
 }
 
 .post-body {
-  max-width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   font-size: 12px;
+  margin-top: 0;
+}
+
+.post-image {
+  height: 600px;
+  width: 100%;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slideDown 1s ease;
 }
 
 #cursor {
@@ -523,7 +533,8 @@ h4 {
     margin-inline: auto;
 
     h1 {
-      display: none;
+      font-size: 16px;
+      margin: 0;
     }
 
     a {
@@ -531,7 +542,7 @@ h4 {
     }
 
     .menu-links {
-      gap: 20px;
+      gap: 15px;
     }
   }
 
@@ -563,8 +574,10 @@ h4 {
     }
 
     .right {
-      width: 350px;
+      width: 85%;
+      height: 400px;
       padding-left: 0;
+      margin-bottom: 20px;
       border-radius: 0 0 4px 4px;
     }
   }
@@ -578,7 +591,18 @@ h4 {
 
       .post {
         height: 350px;
+        border-radius: 4px !important;
       }
+    }
+  }
+
+  .post-wrapper {
+    margin: 0;
+
+    .post-image {
+      width: 85%;
+      max-height: 450px;
+      border-radius: 4px;
     }
   }
 

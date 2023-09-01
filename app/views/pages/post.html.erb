@@ -1,11 +1,29 @@
+<style>
+  @media screen and (min-width: 1201px) {
+    .menu-links {
+      background-color: #F1F0EC;
+    }
+  }
+</style>
+
 <div class="section">
-  
   <%= render "sidebar" %>
   <div class="container post-wrapper">
-    <h2 class="post-title"><%= @post.title %></h2>
-    <p class="post-body"><%= @post.body.html_safe %></p>
+    <div class="post-body"><%= @post.body.html_safe %></div>
   </div>
 </div>
 
 <%= render "cursor_tag" %>
 <%= render "footer" %>
+
+<script>
+  window.onscroll = function() {
+    // Check if the screen width is greater than 960px
+    var navbar = document.querySelector('.sidebar');
+      if (window.scrollY > 0) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = '60px';
+      }
+  };
+</script>
