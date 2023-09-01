@@ -1,23 +1,39 @@
+<style>
+  .sidebar {
+    background-color: transparent;
+  }
+
+  .section {
+    margin-top: 0;
+  }
+
+  .menu-links a {
+    color: #fff;
+  }
+
+  .menu-links h1 {
+    color: #fff;
+  }
+
+  @media screen and (max-width: 960px) {
+    .section {
+      height: 100vh;
+    }
+
+    .landing {
+      margin: 0;
+    }
+  }
+</style>
+
 <div class="section">
   <%= render "sidebar" %>
 
   <div class="container landing">
-    <h1>
-      <span class="text-slide-in">hello,</span><br>
-      <span class="text-slide-in">i am alexis sae an</span><br>
-      <span class="text-slide-in">a full-stack develper,</span><br>
-      <span class="text-slide-in">environmentalist, reader,</span><br>
-      <span class="text-slide-in">coffee-addict, sane cat lady.</span>
-    </h1>
-    <div class="images-container">
-      <div class="images">
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691238594/IMG_1507_kg20bm.jpg", alt: "a man blowing bubbles with a net in a busy park" %>
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691238652/IMG_6875_pqmryx.jpg", alt: "a nice restuarant with pepole dining and portrait paintings on the wall" %>
-      </div>
-      <div class="images">
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691239234/11065_l0bfs2.jpg", alt: "a incense tribute in a temple with teenagers lighting incense sticks" %>
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691242259/fg_pfhywd.jpg", alt: "a woman standing in the middle of a bamboo forest" %>
-      </div>
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="https://res.cloudinary.com/dzwpbkn3u/video/upload/v1693542150/IMG_8414_qd5evf.mov" type="video/mp4">
+      </video>
     </div>
   </div>
   <%= render "footer" %>
