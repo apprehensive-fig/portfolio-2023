@@ -1,6 +1,8 @@
 <style>
-  .sidebar {
-    top: 40px;
+  @media screen and (min-width: 1201px) {
+    .menu-links {
+      background-color: #F1F0EC;
+    }
   }
 </style>
 
@@ -8,18 +10,32 @@
   <%= render "sidebar" %>
 
   <div class="container bio">
-    <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691253465/7F8D531C-96CB-4699-B899-E943812F8D8A_ikonyg.jpg", alt: "my profie photo" %>
-    <div class="text">
-    <% @bio = Post.find_by_p_type("bio") %>
-    <%= @bio.body.html_safe %>
-    </div>
-    <div class="sns">
-      <a href="https://linkedin.com/in/alexis-sae-an" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://instagram.com/lykruok" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/apprehensive-fig" target="_blank"><i class="fab fa-github-square"></i></a>
+    <div class="profile-photo"></div>
+    <div class="right">
+      <div class="text">
+      <% @bio = Post.find_by_p_type("bio") %>
+      <%= @bio.body.html_safe %>
+      </div>
+      <div class="sns">
+        <a href="https://linkedin.com/in/alexis-sae-an" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/lykruok" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/apprehensive-fig" target="_blank"><i class="fab fa-github-square"></i></a>
+      </div>
     </div>
   </div>
   <%= render "footer" %>
 </div>
 
 <%= render "cursor_tag" %>
+
+<script>
+  window.onscroll = function() {
+    // Check if the screen width is greater than 960px
+    var navbar = document.querySelector('.sidebar');
+      if (window.scrollY > 0) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = '60px';
+      }
+  };
+</script>

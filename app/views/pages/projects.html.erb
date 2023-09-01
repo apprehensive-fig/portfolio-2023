@@ -12,9 +12,6 @@
   <div class="container projects">
     <div class="project">
       <div class="left">
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1649162739/Screen_Shot_2022-04-05_at_21.40.35_tnqftm.png", alt: "homepage with illustration of 2 cats and 1 dog" %>
-      </div>
-      <div class="right">
         <div class="text">
           <p>ConnecPet is a social networking service for pet-owers to connect,
           <br>hold or join events, and find pet-sitters nearby.
@@ -22,28 +19,28 @@
           <p style ="color: #eabb00"><a href="https://weconnecpet.herokuapp.com">Go to Project</a></p>
         </div>
       </div>
+      <div class="right">
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1649162739/Screen_Shot_2022-04-05_at_21.40.35_tnqftm.png", alt: "homepage with illustration of 2 cats and 1 dog" %>
+      </div>
     </div>
   
       <div class="project">
         <div class="left">
-          <div class="text">
-            <p>Prankt is a Marketplace application to book pranking services
-            <br>(Ruby on Rails, JS, HTML, CSS, ActiveRecord, PostgreSQL)</p>
-            <p style ="color: #eabb00"><a href="https://prankt.herokuapp.com">Go to Project</a></p>
+          <div  class="thumbnails"class="images-2 mb-3">
+            <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623746716/Screen_Shot_2021-06-15_at_17.43.44_uwjdc0.png", alt: "home" %>
           </div>
         </div>
         <div class="right">
-         <div  class="thumbnails"class="images-2 mb-3">
-          <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623746716/Screen_Shot_2021-06-15_at_17.43.44_uwjdc0.png", alt: "home" %>
+         <div class="text">
+          <p>Prankt is a Marketplace application to book pranking services
+          <br>(Ruby on Rails, JS, HTML, CSS, ActiveRecord, PostgreSQL)</p>
+          <p style ="color: #eabb00"><a href="https://prankt.herokuapp.com">Go to Project</a></p>
         </div>
       </div>
     </div>
 
     <div class="project">
       <div class="left">
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1624364694/rain_o10l4w.png", alt: "raining window illustration" %>
-      </div>
-      <div class="right">
         <div class="text">
           <p>ASMR website built using React</p>
           <a href="https://apprehensive-fig.github.io/a-rain-day/">Rain</a>
@@ -51,30 +48,33 @@
           <a href="https://apprehensive-fig.github.io/a-beach-day/">Beach</a>
         </div>
       </div>
+      <div class="right">
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1624364694/rain_o10l4w.png", alt: "raining window illustration" %>
+      </div>
     </div>
 
     <div class="project">
       <div class="left">
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623908674/Screen_Shot_2021-06-17_at_14.28.31_gpor4j.png", alt: "movie lists" %>
+      </div>
+      <div class="right">
         <div class="text">
           <p>Topicks is a website where you can<br>create, customized lists of your favorite movies
           <br>(Ruby on Rails, JS, HTML, CSS)</p>
           <p style ="color: #eabb00"><a href="https://top-picks-movies.herokuapp.com">Go to Project</a></p>
         </div>
       </div>
-      <div class="right">
-          <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623908674/Screen_Shot_2021-06-17_at_14.28.31_gpor4j.png", alt: "movie lists" %>
-      </div>
     </div>
 
     <div class="project">
       <div class="left">
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1625736699/IMG_6502_g0d20c.png", alt: "line application profile page" %>
-      </div>
-      <div class="right">
         <div class="text">
           <p>A Magic 8 Ball Chatbot on Line. It will answer all your questions</p>
           <p>(Ruby on Rails, Sinatra, Line API)</p>
         </div>
+      </div>
+      <div class="right">
+        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1625736699/IMG_6502_g0d20c.png", alt: "line application profile page" %>
       </div>
     </div>
   <%= render "footer" %>
