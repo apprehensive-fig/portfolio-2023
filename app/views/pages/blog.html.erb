@@ -5,12 +5,11 @@
     <div class="posts">
       <% if @posts %>
         <% @posts.each do |post| %>
-          <div class="post">
-            <%= link_to "/blog/#{post.title}" do %>
-              <%= image_tag post.meta_image %>
-              <%= post.title %>
-            <% end %>
-          </div>
+          <%= link_to "/blog/#{post.title}" do %>
+            <div class="post" style="background: url(<%= post.meta_image %>) no-repeat center / cover">
+              <h4><%= post.title %></h4>
+            </div>
+          <% end %>
         <% end %>
       <% end %>
     </div>
@@ -20,3 +19,14 @@
 
 <%= render "cursor_tag" %>
 
+<script>
+  window.onscroll = function() {
+    // Check if the screen width is greater than 960px
+    var navbar = document.querySelector('.sidebar');
+      if (window.scrollY > 0) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = '60px';
+      }
+  };
+</script>

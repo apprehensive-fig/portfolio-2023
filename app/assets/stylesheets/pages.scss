@@ -206,10 +206,21 @@ h4 {
 
   .posts {
     animation: fadeInAnimation ease 3s;
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 
     .post {
+      height: 500px;
+      width: auto;
+      border-radius: 4px;
+      display: flex;
+      align-items: end;
+      text-indent: 60px;
+      opacity: 80%;
+
       a {
         display: flex;
         flex-direction: column;
@@ -222,6 +233,13 @@ h4 {
         margin-bottom: 20px;
       }
 
+      h4 {
+        font-size: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Questrial', sans-serif;
+      }
+      
       img {
         max-width: 300px;
         border-radius: 4px;
