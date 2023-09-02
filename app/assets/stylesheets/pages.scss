@@ -612,14 +612,14 @@ h4 {
     gap: 20px;
 
     .project {
-      max-width: 80%;
+      width: 100%;
       gap: 0px;
       flex-direction: column;
       border-radius: 4px;
 
       .left, .right {
         background-color: #F1F0EC !important;
-        max-width: 350px;
+        max-width: 85%;
         min-height: 200px;
         padding: 20px;
       }
@@ -639,12 +639,12 @@ h4 {
     .project:nth-child(odd) {
       .right {
         order: 1;
-        border-radius: 0 0 4px 4px;
+        border-radius: 4px 4px 0 0;
       }
 
       .left {
         order: 2;
-        border-radius: 4px 4px 0 0;
+        border-radius: 0 0 4px 4px;
       }
     }
 
