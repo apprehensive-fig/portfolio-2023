@@ -307,7 +307,6 @@ h4 {
       width: 100%;
 
       img {
-        opacity: 70%;
         height: 530px;
         width: 550px;
       }
@@ -354,7 +353,8 @@ h4 {
       background-color: #FEFEFD;
 
       img {
-        width: 300px;
+        width: 200px;
+        height: auto;
       }
     }
   }
@@ -379,7 +379,7 @@ h4 {
       background-color: #F3F3F3;
 
       img {
-        width: 300px;
+        width: 200px;
         height: auto;
       }
     }
@@ -399,7 +399,7 @@ h4 {
       background-color:#FEFEFD;
 
       img {
-        width: 300px;
+        width: 200px;
         height: auto;
       }
     }
@@ -650,7 +650,7 @@ h4 {
 
     .project:nth-child(odd) {
       .left img {
-        max-width: 320px;
+        max-width: 300px;
       }
     }
   }
