@@ -4,78 +4,69 @@
       background-color: #F1F0EC;
     }
   }
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .thumbnails {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.left,
+.right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
 
-  .left,
-  .right {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-  }
+.left img,
+.right img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
 
-  .left img,
-  .right img {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    transition: transform 1s, visibility 0.1s;
-  }
+.left img:nth-child(2),
+.right img:nth-child(2) {
+  opacity: 0;
+}
 
-  .left img:nth-child(2),
-  .right img:nth-child(2) {
-    transform: scaleX(0) translateX(-50%);
-    visibility: hidden;
-  }
+/* Hover effect for left */
+.left:hover img:first-child {
+  opacity: 0;
+}
 
-  /* Hover effect for left */
-  .left:hover img:first-child {
-    transform: scaleX(0) translateX(50%);
-    visibility: hidden;
-  }
+.left:hover img:nth-child(2) {
+  opacity: 1;
+}
 
-  .left:hover img:nth-child(2) {
-    transform: scaleX(1) translateX(0);
-    visibility: visible;
-  }
+/* Reset for left when not hovering */
+.left:not(:hover) img:first-child {
+  opacity: 1;
+}
 
-  /* Reset for left when not hovering */
-  .left:not(:hover) img:first-child {
-    transform: scaleX(1) translateX(0);
-    visibility: visible;
-  }
+.left:not(:hover) img:nth-child(2) {
+  opacity: 0;
+}
 
-  .left:not(:hover) img:nth-child(2) {
-    transform: scaleX(0) translateX(-50%);
-    visibility: hidden;
-  }
+/* Hover effect for right */
+.right:hover img:first-child {
+  opacity: 0;
+}
 
-  /* Hover effect for right */
-  .right:hover img:first-child {
-    transform: scaleX(0) translateX(-50%);
-    visibility: hidden;
-  }
+.right:hover img:nth-child(2) {
+  opacity: 1;
+}
 
-  .right:hover img:nth-child(2) {
-    transform: scaleX(1) translateX(0);
-    visibility: visible;
-  }
+/* Reset for right when not hovering */
+.right:not(:hover) img:first-child {
+  opacity: 1;
+}
 
-  /* Reset for right when not hovering */
-  .right:not(:hover) img:first-child {
-    transform: scaleX(1) translateX(0);
-    visibility: visible;
-  }
-
-  .right:not(:hover) img:nth-child(2) {
-    transform: scaleX(0) translateX(-50%);
-    visibility: hidden;
-  }
+.right:not(:hover) img:nth-child(2) {
+  opacity: 0;
+}
 </style>
 
 <div class="section">
