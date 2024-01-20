@@ -1,16 +1,8 @@
-<style>
-  @media screen and (min-width: 1201px) {
-    .menu-links {
-      background-color: #F1F0EC;
-    }
-  }
-</style>
-
 <div class="section">
   <%= render "sidebar" %>
 
   <div class="container bio">
-    <div class="profile-photo"></div>
+    <img class="profile-photo" src="https://res.cloudinary.com/dzwpbkn3u/image/upload/v1691253465/7F8D531C-96CB-4699-B899-E943812F8D8A_ikonyg.jpg">
     <div class="right">
       <div class="text">
       <% @bio = Post.find_by_p_type("bio") %>

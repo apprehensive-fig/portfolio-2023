@@ -1,9 +1,4 @@
 <style>
-  @media screen and (min-width: 1201px) {
-    .menu-links {
-      background-color: #F1F0EC;
-    }
-  }
 .thumbnails {
   display: flex;
   justify-content: center;
@@ -76,9 +71,9 @@
     <div class="project">
       <div class="left">
         <div class="text">
-          <p>ConnecPet is a social networking service for pet-owers to connect,
-          <br>hold or join events, and find pet-sitters nearby.
-          <br>(Ruby on Rails, JS, HTML, CSS, ActiveRecord, PostgreSQL)</p>
+          <p>ConnecPet is a social networking service<br> for pet-owers to connect,
+          <br>hold or join events, and find pet-sitters nearby.</p>
+          <p>(Ruby on Rails, JS, HTML, CSS,<br> ActiveRecord, PostgreSQL)</p>
         </div>
       </div>
       <div class="right">
@@ -96,8 +91,8 @@
         </div>
         <div class="right">
          <div class="text">
-          <p>Prankt is a Marketplace application to book pranking services
-          <br>(Ruby on Rails, JS, HTML, CSS, ActiveRecord, PostgreSQL)</p>
+          <p>Prankt is a Marketplace application<br> to book pranking services</p>
+          <p>(Ruby on Rails, JS, HTML, CSS,<br> ActiveRecord, PostgreSQL)</p>
         </div>
       </div>
     </div>
@@ -107,7 +102,7 @@
         <div class="text">
           <p>ASMR website built using React</p>
           <a href="https://apprehensive-fig.github.io/a-rain-day/">Rain</a>
-          <a href="https://apprehensive-fig.github.io/a-summer-day/">Summeh</a>
+          <a href="https://apprehensive-fig.github.io/a-summer-day/">Summer</a>
           <a href="https://apprehensive-fig.github.io/a-beach-day/">Beach</a>
         </div>
       </div>
@@ -119,21 +114,8 @@
 
     <div class="project">
       <div class="left">
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623908674/Screen_Shot_2021-06-17_at_14.28.31_gpor4j.png", alt: "movie lists" %>
-        <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1623908674/Screen_Shot_2021-06-17_at_14.30.10_vflcmn.png", alt: "lord of the rings movie bookmark" %>
-      </div>
-      <div class="right">
         <div class="text">
-          <p>Topicks is a website where you can<br>create, customized lists of your favorite movies
-          <br>(Ruby on Rails, JS, HTML, CSS)</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="left">
-        <div class="text">
-          <p>A Magic 8 Ball Chatbot on Line. It will answer all your questions</p>
+          <p>A Magic 8 Ball Chatbot on Line.<br> It will answer all your questions</p>
           <p>(Ruby on Rails, Sinatra, Line API)</p>
         </div>
       </div>
@@ -142,9 +124,10 @@
         <%= image_tag "https://res.cloudinary.com/dzwpbkn3u/image/upload/v1625736698/IMG_6501_jkks6a.png", alt: "chat room with a line chatbot" %>
       </div>
     </div>
-  <%= render "footer" %>
+  </div>
 </div>
 
+<%= render "footer" %>
 <%= render "cursor_tag" %>
 
 <script>
